@@ -10,3 +10,4 @@ data/
 output/
 models/
 *.swp
+/data/
