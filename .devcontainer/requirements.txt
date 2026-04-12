@@ -1,0 +1,24 @@
+arrow
+geopandas
+matplotlib
+mlflow
+mlflow-skinny
+numba
+pillow
+rasterio
+seaborn
+torch
+tqdm
+numpy < 2
+timm
+einops
+sen2sr
+mlstac
+git+https://github.com/ESDS-Leipzig/cubo.git
+s3cmd
+tifffile
+imagecodecs
+segmentation_models_pytorch 
+ipykernel
+jupyterlab
+gdown

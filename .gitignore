@@ -1,0 +1,12 @@
+*.tif
+*.vrt
+*.zip
+*.npy
+*.pt
+*.ckpt
+__pycache__/
+.ipynb_checkpoints/
+data/
+output/
+models/
+*.swp

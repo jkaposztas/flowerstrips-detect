@@ -1,0 +1,40 @@
+
+{
+  "name": "Pytorch Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".",
+    "args": {
+      "USERNAME": "jkaposztas",
+      "USER_UID": "1009",
+      "USER_GID": "1009"
+    }
+  },
+  // "runArgs": ["--gpus", "all"], wieder einkommentieren
+  // Substitute muro here for users that should have access to the container
+  // Same id than you have in the server
+  "remoteUser": "jkaposztas",
+  "updateRemoteUserUID": true,
+  "forwardPorts": [9989],
+  "mounts": [
+    // Example: bind-mount a data folder on the server into /workspace/data
+    // "source=/data/projects/STAC,target=/workspace/data,type=bind,consistency=cached"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "ms-toolsai.vscode-jupyter-powertoys",
+        "Maimonator.gpu-monitor",
+        "Leonardo16.nvidia-gpu",
+        "mutantdino.resourcemonitor",
+        "ionutvmi.path-autocomplete"
+      ]
+    }
+  },
+  "features": {},
+  "postCreateCommand": "",
+  "postStartCommand": ""
+}
