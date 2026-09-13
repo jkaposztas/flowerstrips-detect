@@ -10,16 +10,13 @@
       "USER_GID": "1009"
     }
   },
-  // "runArgs": ["--gpus", "all"], wieder einkommentieren
-  // Substitute muro here for users that should have access to the container
-  // Same id than you have in the server
+  "runArgs": ["--gpus", "device=3"],
   "remoteUser": "jkaposztas",
   "updateRemoteUserUID": true,
   "forwardPorts": [9989],
   "mounts": [
-    // Example: bind-mount a data folder on the server into /workspace/data
-    // "source=/data/projects/STAC,target=/workspace/data,type=bind,consistency=cached"
-  ],
+    "source=/local2,target=/local2,type=bind"
+    ],
   "customizations": {
     "vscode": {
       "extensions": [

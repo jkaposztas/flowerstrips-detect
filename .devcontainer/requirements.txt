@@ -22,3 +22,5 @@ segmentation_models_pytorch
 ipykernel
 jupyterlab
 gdown
+medpy
+contextily
